@@ -3,6 +3,7 @@
     <h2>测试页面 1</h2>
     <p>这是路由为 /test/index/home 的测试页面</p>
   </div>
+
 </template>
 
 <script setup lang="ts">

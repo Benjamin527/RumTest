@@ -14,17 +14,17 @@ posthog.init('phc_QyR904n1u8ZZx7kzyAmtKoXIuDAQlehaAdrANyHmKIP',
 
 datafluxRum.init({
     applicationId: 'vite3',
-    site: 'https://rum-openway.guance.com',
-    clientToken: 'c8e8950535734d278575be8e82b50ec4',
+    site: 'https://ap1-rum-openway.guance.com',
+    clientToken: '98c3d59ee5734a7c9e044fea1ab662de',
     env: 'production',
     version: '1.0.0',
     service: 'browser',
     sessionSampleRate: 100,
-    sessionReplaySampleRate: 70,
+    sessionReplaySampleRate: 100,
     compressIntakeRequests: true,
     trackUserInteractions: true,
     // traceType: 'ddtrace', // 非必填，默认为ddtrace，目前支持 ddtrace、zipkin、skywalking_v3、jaeger、zipkin_single_header、w3c_traceparent 6种类型
-    allowedTracingOrigins: ['https://api.example.com',/https:\/\/.*\.my-api-domain\.com/],  // 非必填，允许注入trace采集器所需header头部的所有请求列表。可以是请求的origin，也可以是是正则
+    allowedTracingUrls: ['https://api.example.com',/https:\/\/.*\.my-api-domain\.com/],  // 非必填，允许注入trace采集器所需header头部的所有请求列表。可以是请求的origin，也可以是是正则
 });
 
 datafluxRum.startSessionReplayRecording()

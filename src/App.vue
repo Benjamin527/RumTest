@@ -109,7 +109,6 @@ onUnmounted(() => {
 
     <HelloWorld msg="Vite + Vue" />
     <router-view></router-view>
-    <video class="vjs-tech" id="vjs_video_3_html5_api" tabindex="-1" preload="auto"  src="blob:https://pan.quark.cn/007a8bc0-eef9-4a12-9fd9-e10e876a10c0"></video>
 
 
     <button 
